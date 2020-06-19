@@ -17,6 +17,7 @@ public class Main {
             System.out.println("You have " + i + " guess(es) left. Choose again.");
             int guess = sc.nextInt();
 
+            //Comparing guess and random
             if (guess > random) {
                 System.out.println("It's smaller than " + guess + ".");
             } else if (guess < random) {
@@ -27,6 +28,7 @@ public class Main {
             }
         }
 
+        //Adding final message
         if (hasWon) {
             System.out.println("CORRECT! YOU WIN! CONGRATULATIONS!");
         } else {
